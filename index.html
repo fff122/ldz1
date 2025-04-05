@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WANTED - 劉德洲 - 劉徳洲 - Liu Dezhou</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+</head>
+<body>
+    <div id="global-glitch-overlay"></div>
+    <div class="language-selector">
+        <button class="lang-btn active" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="ja">日本語</button>
+        <button class="lang-btn" data-lang="zh">中文</button>
+    </div>
+
+    <div class="container">
+        <div class="wanted-poster">
+            <div class="glitch-text" data-text="WANTED">WANTED</div>
+            <div class="photo-container">
+                <div class="scan-overlay"></div>
+                <img src="criminal.svg" class="wanted-svg" alt="Wanted Person">
+                <div class="scan-line"></div>
+            </div>
+            
+            <!-- 3D Floating crimes -->
+            <div class="crimes-3d-container">
+                <div class="crime-tag" data-en="DATA THEFT" data-ja="データ窃取" data-zh="数据窃取">DATA THEFT</div>
+                <div class="crime-tag" data-en="AI MANIPULATION" data-ja="AI操作" data-zh="人工智能操纵">AI MANIPULATION</div>
+                <div class="crime-tag" data-en="NEURAL HACKING" data-ja="神経ハッキング" data-zh="神经黑客">NEURAL HACKING</div>
+                <div class="crime-tag" data-en="IDENTITY FORGE" data-ja="身分偽造" data-zh="身份伪造">IDENTITY FORGE</div>
+                <div class="crime-tag" data-en="GRID SABOTAGE" data-ja="グリッド妨害" data-zh="电网破坏">GRID SABOTAGE</div>
+                <div class="crime-tag" data-en="MEMORY IMPLANT" data-ja="記憶移植" data-zh="记忆植入">MEMORY IMPLANT</div>
+                <div class="crime-tag" data-en="BIO-DIGITAL VIRUS" data-ja="生体デジタルウイルス" data-zh="生物数字病毒">BIO-DIGITAL VIRUS</div>
+                <div class="crime-tag" data-en="COGNITIVE DISSONANCE INDUCTION" data-ja="認知的不協和誘導" data-zh="认知失调诱导">COGNITIVE DISSONANCE INDUCTION</div>
+            </div>
+            
+            <div class="details">
+                <h2 class="name" data-en="Liu Dezhou" data-ja="劉徳洲" data-zh="劉德洲">Liu Dezhou</h2>
+                <div class="info">
+                    <p class="year" data-en="Year 3091" data-ja="3091年" data-zh="3091年">Year 3091</p>
+                    <p class="crime" data-en="Cyber Crimes" data-ja="サイバー犯罪" data-zh="网络犯罪">Cyber Crimes</p>
+                    <p class="reward" data-en="Reward: 1,000,000 CR" data-ja="報酬: 1,000,000 CR" data-zh="悬赏: 1,000,000 CR">Reward: 1,000,000 CR</p>
+                </div>
+            </div>
+            <div class="cyber-grid"></div>
+        </div>
+    </div>
+
+    <!-- Popup Modal -->
+    <div id="popup-modal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <p id="modal-greeting" data-en="Hello, I'm Liu Dezhou" data-ja="こんにちは、私は劉徳洲です" data-zh="你好，我是刘德洲">你好，我是刘德洲</p>
+            <p id="modal-question" data-en="What is Liu Dezhou to you?" data-ja="劉徳洲はあなたにとって何ですか？" data-zh="刘德洲对你来说是什么？">刘德洲对你来说是什么？</p>
+            <div class="modal-options">
+                <button id="option-a" data-en="A: Idiot" data-ja="A: ばか" data-zh="A: 傻逼">A: 傻逼</button>
+                <button id="option-b" data-en="B: God" data-ja="B: 神" data-zh="B: 神">B: 神</button>
+            </div>
+            <div id="modal-feedback" class="modal-feedback" style="display: none;"></div>
+        </div>
+    </div>
+
+    <!-- Hacked Overlay -->
+    <div id="hacked-overlay" style="display: none;">
+        <div class="hacked-content">
+            <div class="hacked-text"></div>
+            <div id="explosion-warning" class="hacked-warning" style="display: none;"></div>
+            <div id="countdown-timer" class="hacked-timer" style="display: none;"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
